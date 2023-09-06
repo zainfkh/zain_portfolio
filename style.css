@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: head;
+    src: url(./Heading-Now-Variable.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#main{
+color: #d9dcde;
+}
+body,html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    overflow: hidden;
+    margin: 0 4%;
+    position: relative;
+    overflow: hidden;
+    font-family: head;
+    color: white;
+    
+}
+.nav1{
+    font-stretch: 200%;
+    font-size: 3vw;
+    color: white;
+}
+.nav2{
+    color: black;
+    font-size: 1.4vw;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    
+}
+.nav2 a{
+    text-decoration: none;
+    color: white;  
+    font-weight: 100; 
+    transition: all ease 0.5s;
+}
+.nav2 a:hover{
+    font-weight: 900;
+   
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: head;
+    background-color: black;
+    
+}
+.page1 h1:nth-child(2){
+    font-size: 33vw;
+    white-space: nowrap;
+    font-stretch: 250% ;
+    font-weight: 999;
+    margin-left: 2%;
+    margin-top: -3.5%;
+
+}
+.page2{
+    height: 140vh;
+    width: 100%;
+    font-family: head;
+    margin-bottom: 10%;
+}
+.page2 video{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    width: 30%;
+
+}
+
+.page3{
+    height: 90vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: -10%;
+   border-top: 1px solid rgb(170, 170, 170);
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 13%;
+   border-radius: 50px;
+    
+}
+.pg-3{
+    width: 40%;
+    margin-left: 7%;
+    padding-top: 5%;
+}
+.page3 h1{
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -3px;
+    font-weight: 700;
+    cursor: default;
+}
+
+.page3 p{
+    width: 40ch;
+    font-size: 2vw;
+    font-weight: lighter;
+    cursor: default;
+    padding-top: 7%;
+    color: rgb(98, 98, 98);
+    opacity: 0;
+}
+.page3 img{
+    margin-top: 5%;
+    margin-right: 4%;
+    border-radius: 50px;
+    max-height: 100%;
+    opacity: 0;
+}
+  .marquee {
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @media (max-width: 992px) {
+    .marquee h3 {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 549px) {
+    .marquee h3 {
+      font-size: 50px;
+    }
+  }
+hr{
+    margin-bottom: 15%;
+}
+#page4{
+    height: 180vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+
+}
+#page4 a{
+    text-decoration: none;
+    color: black;
+}
+.elem{
+    width: 95%;
+    border-top: 1px solid gray;
+    padding: 2.5vw 3vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    justify-content: space-between;
+    transition: all ease 0.2s;
+}
+
+.elem h1{
+    font-size: 1.4vw;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+.elem-last{
+    border-bottom: 1px solid gray;
+}
+.elem:hover{
+   color: rgb(153, 153, 153);
+}
+.elem:hover h1{
+    opacity: 0.7;
+  
+    margin-left: 6px;
+}
+.elem h5{
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.elem img{
+    height: 120%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+}
+.work__title {
+    font-size: 2.8vw;
+    letter-spacing: 2px;
+    padding-bottom: 5%;
+    font-weight: 100;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    cursor: default;
+    letter-spacing: -4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.page5{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.page5 h4{
+    color: black;
+    font-weight: 999;
+    margin-left: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.techs{
+    color: black;
+    margin-right: 4%;
+    width: 40%;
+}
+.techs p{
+    border-top: 1px solid rgb(175, 175, 175);
+   padding-top: 4%;
+   padding-bottom: 4%;
+   text-align: center;
+   font-size: 2vw;
+}
+.techs p:nth-child(3){
+    border-bottom: 1px solid rgb(176, 176, 176);
+}
+.page6{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: head;
+}
+.page6 h1{
+    font-size: 7vw;
+    font-stretch: 400%;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+    line-height: 95%;
+}
+.page6 a{
+    text-decoration: none;
+    color: white;
+    font-stretch: 600%;
+    font-weight: 300;
+    transition: all ease 0.5s;
+}
+.page6 a:hover{
+    font-weight: 600;
+}
+.page6 i{
+    color: white;
+    padding-left: 10px;
+}
+
+.p-1{
+margin-bottom: 1px;
+    font-stretch: 500%;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+.p-2{
+    font-stretch: 500%;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+.p{
+    margin-bottom: 4%;
+    cursor:default;
+    width: 100%;
+}
+footer{
+    height: 70vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    font-size: 2vw;
+    border-bottom: 1px solid grey;
+}
+.left img{
+    width: 25%;
+    position: relative;
+    right: 20%;
+}
+.right .mailfoot{
+   text-decoration: none;
+   font-size: 1.3vw;
+   color: #000000;
+}
+.mailfoot:hover{
+    text-decoration: underline;
+    color: black;
+  }
+.right{
+    margin-right: 8%;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5%;
+}
+.social a{
+text-decoration: none;
+color: black;
+font-size: 1vw;
+}
+.social a:hover{
+    color: grey;
+}
+.footer2{
+   position: relative;
+   top:23%;
+   font-weight: 900;
+}
+.footer2 p{
+    text-align: center;
+    font-size: 1vw;
+}
+
+
+@media screen and (max-width: 767px){
+    .page3 p {
+        width: 30ch;
+        font-size: 2.3vw;
+    }
+    .nav2{
+        font-size: 2vw;
+    }
+    .page3 img{
+        margin-top: 5%;
+        margin-right: 4%;
+        border-radius: 10px;
+        max-height: 55%;
+        opacity: 0;
+    }
+    .page3 h1{
+        font-size: 3vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: -1px;
+        font-weight: 700;
+        cursor: default;
+    }
+    .page3{
+       border-top: 1px solid rgb(170, 170, 170);
+
+       border-radius: 0px;
+        
+    }
+    #page4{
+        height: 120vh;
+    }
+    .work__title{
+        font-size: 5vw;
+        letter-spacing: -2px;
+    }
+    .elem{
+        padding: 6vw 3vw;
+    }
+    .elem h1{
+        font-size: 3vw;
+    }
+    .elem h5{
+        font-size: 2vw;
+    }
+    .elem img{
+        height: 140%;
+    }
+    .page5{
+        margin-top: 10%;
+    }
+    .page6 h1{
+        font-size: 8vw;
+    }
+    .page6 a{
+        font-size: 15px;
+    }
+    .right .mailfoot{
+        font-size: 2vw;
+    }
+    .social a{
+        font-size: 1.7vw;
+    }
+    .footer2 p{
+        font-size: 1.5vw;
+    } 
+}
